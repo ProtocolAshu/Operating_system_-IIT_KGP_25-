@@ -11,7 +11,7 @@ system calls (`fork`, `exec`, signals, pipes, System V IPC, pthreads).
 ```
 Operating_system_-IIT_KGP_25-/
 ├── Lab_Assignments/     # 10 solved lab assignments (C/C++)
-│   ├── LA1 … LA9, Lab_B # each with its own README.md
+│   ├── LA1_…LA9_, Lab_B_ # each with its own README.md
 ├── Lab_slides/          # Lab session slides & sample code
 └── Theory_slides/       # Theory lecture slides + tutorials
 ```
@@ -20,16 +20,16 @@ Operating_system_-IIT_KGP_25-/
 
 | # | Assignment | Topic | Key Concepts |
 |---|------------|-------|--------------|
-| [LA1](Lab_Assignments/LA1) | Recursive rebuild of foo-modules | make-like dependency resolution | `fork()`, `execlp()`, `wait()` |
-| [LA2](Lab_Assignments/LA2) | Catch–Miss ball game | signal-driven game simulation | `sigaction()`, `kill()`, SIGUSR1/SIGUSR2/SIGINT |
-| [LA3](Lab_Assignments/LA3) | CPU scheduling simulator | FCFS & Round Robin (q=10, q=5) | event-driven simulation, min-heap, PCB |
-| [LA4](Lab_Assignments/LA4) | Foodoku (distributed Sudoku) | 9 block processes in xterm windows | `pipe()`, `dup2()`, block↔block messaging |
-| [LA5](Lab_Assignments/LA5) | Leader–Follower | turn-taking via shared memory | System V `shmget`/`shmat`, busy-wait sync |
-| [LA6](Lab_Assignments/LA6) | Restaurant simulation | cooks, waiters, customers (11am–3pm) | System V semaphores, shared memory, producer–consumer |
-| [LA7](Lab_Assignments/LA7) | Boating problem | pairwise boat–visitor matching | pthreads, custom semaphores, barriers |
-| [LA8](Lab_Assignments/LA8) | Deadlock avoidance | Banker's algorithm | safety check, resource matrices, condvars |
-| [LA9](Lab_Assignments/LA9) | Demand paging & swapping | binary searches under memory pressure | page tables, page faults, swap in/out |
-| [Lab B](Lab_Assignments/Lab_B) | File search utility (`finall`) | recursive search by extension | `opendir`/`readdir`/`lstat`, `/etc/passwd` |
+| [LA1](Lab_Assignments/LA1_Dependency_Rebuild) | Recursive rebuild of foo-modules | make-like dependency resolution | `fork()`, `execlp()`, `wait()` |
+| [LA2](Lab_Assignments/LA2_Catch_Miss_Ball_Game) | Catch–Miss ball game | signal-driven game simulation | `sigaction()`, `kill()`, SIGUSR1/SIGUSR2/SIGINT |
+| [LA3](Lab_Assignments/LA3_CPU_Scheduling_Simulator) | CPU scheduling simulator | FCFS & Round Robin (q=10, q=5) | event-driven simulation, min-heap, PCB |
+| [LA4](Lab_Assignments/LA4_Foodoku_Distributed_Sudoku) | Foodoku (distributed Sudoku) | 9 block processes in xterm windows | `pipe()`, `dup2()`, block↔block messaging |
+| [LA5](Lab_Assignments/LA5_Leader_Follower_Shared_Memory) | Leader–Follower | turn-taking via shared memory | System V `shmget`/`shmat`, busy-wait sync |
+| [LA6](Lab_Assignments/LA6_Restaurant_Simulation) | Restaurant simulation | cooks, waiters, customers (11am–3pm) | System V semaphores, shared memory, producer–consumer |
+| [LA7](Lab_Assignments/LA7_Boating_Pthreads) | Boating problem | pairwise boat–visitor matching | pthreads, custom semaphores, barriers |
+| [LA8](Lab_Assignments/LA8_Bankers_Algorithm_Deadlock) | Deadlock avoidance | Banker's algorithm | safety check, resource matrices, condvars |
+| [LA9](Lab_Assignments/LA9_Demand_Paging_Virtual_Memory) | Demand paging & swapping | binary searches under memory pressure | page tables, page faults, swap in/out |
+| [Lab B](Lab_Assignments/Lab_B_Recursive_File_Search) | File search utility (`finall`) | recursive search by extension | `opendir`/`readdir`/`lstat`, `/etc/passwd` |
 
 Each assignment folder contains its own `README.md` with the objective, file
 descriptions, and build/run instructions.
@@ -39,7 +39,7 @@ descriptions, and build/run instructions.
 Assignments are plain C/C++ and build with `gcc`/`g++` on Linux. Some use `make`:
 
 ```bash
-cd Lab_Assignments/LA2
+cd Lab_Assignments/LA2_Catch_Miss_Ball_Game
 make && make run
 ```
 
